@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" charset="utf-8">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="root">
+      <header>
+        <div id="brand">
+          <img id="logo" src="logoCifrator.png" alt="Logo Cifrator.com">
+        </div>
+        <br>
+        <div id= "brandText">
+        <h1>Cifrator.com</h1>
+      </div>
+      </header>
+      <h2>The place of the secret text</h2>
+      <fieldset>
+        <h2>¿Cómo funciona?</h2>
+        <br>
+        <div id="ExCifrado">
+        <img id="Imgcifrado" src="thumb.png" alt="Explicación cifrado Caesar">
+      </div>
+        <br>
+        <p id="Description">En esta página podras crear contraseñas y mensajes secretos a través del <strong>Cifrado César</strong>, 
+        también conocido como cifrado por desplazamiento, es una de las técnicas de cifrado más simples y
+         más usadas. Es un tipo de cifrado por sustitución en el que una letra en el texto original es 
+         reemplazada por otra letra que se encuentra un número fijo de posiciones más adelante en el 
+         alfabeto.</p>
+      </fieldset>
+      <br>
+      <button id="startCifrator" clickon="showCipherPage">Comenzar</button>
+    </section>
+    <section id="cipherpage" style="display: none;">
+      <fieldset>
+        <legend><h2>Instrucciones a seguir para Cifrar/Descifrar tu mensaje:</h2></legend>
+      <ol type="I">
+        <li>Inserta tu mensaje/contraseña a cifrar/descifrar en la caja de texto</li>
+        <li>Selecciona el nivel de desplazamiento a utilizar</li>
+        <li>Dale click al botón de tu selección: <b>¡Cifrar</b> o <b>¡Descifrar!</b></li>
+      </ol>
+      </fieldset>
+      <label>Mensaje / contraseña:</label><br>
+      <textarea id="textToCipher" class="TextoUsuario" placeholder="Escibre aquí tu mensaje/contraseña"></textarea>
+      <br>
+      <br>
+      <input id="offset" type="number" placeholder="ej.1">
+      <br>
+      <br>
+      <button id="btn1">¡ Cifrar !</button>    <button id="btn2">¡ Descifrar !</button>
+      <fieldset id="cipherZone">
+        <h3>Tu mensaje cifrado es el siguiente:</h3>
+        <textarea id="cipherText" class="TextoUsuario"></textarea>
+        <br>
+        <button id="btnReturn">Regresar ←</button>
+      </fieldset>
+    </section>
+    <script src="index.js" type="module"></script>
+  </body>
+  <footer>
+    <a href="//es.wikipedia.org/wiki/Derecho_de_autor" target="_blank">Copyright</a> <a href="https://es.semrush.com/blog/faqs/" target="_blank">FAQ's</a>
+    <br>
+    <br>
+    <p>Monzerrat Bañuelos - Laboratoria 2022 <br> Copyright ©</p>
+  </footer>
+</html>
